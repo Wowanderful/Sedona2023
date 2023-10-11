@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="css/style.min.css"> 
+  </head>
+
+  <body>
+<!--Paste header-->
+
+<main class="main-page form-page">
+  <section class="hero-formpage container">
+    <div class="hero-formpage__photo">
+      <img>
+    </div>
+    <div class="hero-formpage__text layout-wrapper">
+      <h1>Оставьте свой отзыв</h1>
+      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них,
+        а также о посещенных вами достопримечательностях</p>
+    </div>
+  </section>
+
+  <article class="form-wrapper container layout-wrapper">
+    <form>
+      <section class="text-forms">
+        <fieldset class="text-forms__name-column name-column">
+          <h2>Представьтесь:</h2>
+          <label class="name-column__firstname" for="firstname">
+            <span>Имя<sup>*</sup>:</span>
+            <input type="text" id="firstname" name="name" required>
+          </label>
+          <label class="name-column__lastname" for="lastname">
+            <span>Фамилия<sup>*</sup>:</span>
+            <input type="text" id="lastname" name="lastname" required>
+          </label>
+          <label class="name-column__patronimic" for="patronimic">
+            <span>Отчество:</span>
+            <input type="text" id="patronimic" name="patronimic">
+          </label>
+        </fieldset>
+        <fieldset class="contacts-forms">
+          <h2>Контактная информация:</h2>
+          <label class="contacts-form__tel" for="phone">
+            <span>Контактный телефон<sup>*</sup>:</span>
+            <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+          </label>
+          <label class="contacts-form__email" for="email">
+            <span>Электронная почта<sup>*</sup>:</span>
+            <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+          </label>
+        </fieldset>
+      </section>
+
+      <section class="check-forms">
+        <fieldset class="check-forms__radio">
+          <h2>ВАше Общее впечатление:</h2>
+          <ul class="check-forms__radiolist">
+            <label class="check-forms__label">
+              <input type="radio" name="experience" value="positive" checked>
+              <span>Скорее положительное</span>
+            </label>
+            <label clsss="radio-forms__label">
+              <input type="radio" name="experience" value="negative">
+              <span>Скорее отрицательное</span>
+            </label>
+            <label class="radio-forms__label">
+              <input type="radio" name="experience" value="undefined">
+              <span>Затрудняюсь ответить</span>
+            </label>
+          </ul>
+        </fieldset>
+        <fieldset class="check-forms__checkbox">
+          <h2>посещенные достопримечательности:</h2>
+          <ul class="check-forms__checkboxlist">
+            <label class="check-forms__label">
+              <input type="checkbox" name="devilsbridge" checked>
+              <span>Мост Дьявола</span>
+            </label>
+            <label class="check-forms__label">
+              <input type="checkbox" name="bellmountain" checked>
+              <span>Гора-Колокол</span>
+            </label>
+            <label class="check-forms__label">
+              <input type="checkbox" name="slidepark" checked>
+              <span>Слайд-Парк</span>
+            </label>
+            <label class="check-forms__label">
+              <input type="checkbox" name="redrocks">
+              <span>Красные скалы</span>
+            </label>
+          </ul>
+        </fieldset>    
+      </section>
+
+      <section class="comments-form">
+        <h2>Опишите свои эмоции:</h2>
+        <label class="comments-form__form">
+          <textarea name="comments">Опишите подробно все свои восторги</textarea>
+        </label>
+      </section>
+
+      <section class="last-section">
+        <button type="submit" class="btn standard-button">Отправить отзыв</button>
+        <span><sup>*</sup>- обязательные поля</span>
+      </section>
+    </form>
+  </article>
+</main>
+
+</body>
+</html>
