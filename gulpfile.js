@@ -38,7 +38,7 @@ export const html = () => {
 //Scripts
 
 export const scripts = () => {
-  return gulp.src('source/script.js')
+  return gulp.src('source/js/script.js')
   .pipe(terser())
   .pipe(gulp.dest('build/js'))
 }
@@ -57,13 +57,13 @@ const optimizeImages = () => {
 
   // WebP
 
-const createWebp = () => {
-  return gulp.src('source/images/*.{png,jpg}')
-  .pipe(squoosh({
-  webp: {}
-  }))
-  .pipe(gulp.dest('build/images'))
-  }
+// const createWebp = () => {
+//   return gulp.src('source/images/*.{png,jpg}')
+//   .pipe(squoosh({
+//   webp: {}
+//   }))
+//   .pipe(gulp.dest('build/images'))
+//   }
 
   // SVG
 
@@ -141,7 +141,7 @@ export const build = gulp.series(
   scripts,
   svg,
   sprite,
-  createWebp
+  // createWebp
   ),
   );
 
@@ -157,7 +157,7 @@ export default gulp.series(
   scripts,
   svg,
   sprite,
-  createWebp
+  // createWebp
   ),
   gulp.series(
   server,

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
 }
 
 .features__other-list {
@@ -13,13 +14,43 @@
 
 .main-feature {
   background-color: @main-color;
+  padding-top: 54px;
+}
+
+.main-feature__image-part {
+  width: 100%; 
+  height: auto;
+  min-height: 260px;
+  background-color: @main-color;
+}
+
+.main-feature__image-part img {
+  object-fit: cover;
+  height: 100%;
+  min-height: 260px;
 }
 
 .main-feature2 {
   background-color: @main-color;
+  padding-top: 54px;
 }
 
-.main-feature h2 {
+.main-feature2__image-part {
+  width: 100%; 
+  height: auto;
+  min-height: 260px;
+  background-color: @main-color;
+}
+
+.main-feature2__image-part img {
+  object-fit: cover;
+  height: 100%;
+  min-height: 260px;
+}
+
+
+.main-feature h2,
+.main-feature2 h2 {
   color: #FFF;
   text-align: center;
   font-family: PT Sans;
@@ -30,7 +61,8 @@
   text-transform: uppercase;
 }
 
-.main-feature span {
+.main-feature span,
+.main-feature2 span {
   color: #FFF;
   text-align: center;
   font-family: PT Sans;
@@ -39,9 +71,12 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+
+  display: block;
 }
 
-.main-feature p {
+.main-feature p,
+.main-feature2 p {
   color: #FFF;
   text-align: center;
   font-family: PT Sans;
@@ -50,6 +85,34 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+
+  margin-bottom: 54px;
+}
+.legend {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.legend__item {
+  padding-left: 30px;
+
+  background-repeat: no-repeat; 
+  background-position: 0 0;
+}
+
+.legend__item--home {
+    background-image: url("../../images/SVG/icon-house.svg.svg");
+}
+
+.legend__item--food {
+  background-image: url("../../images/SVG/icon-burger.svg.svg");
+}
+
+.legend__item--shopping {
+  background-image: url("../../images/SVG/icon-gift.svg.svg");
 }
 
 .legend h3 {
@@ -72,6 +135,18 @@
   text-transform: uppercase;
 }
 
+.features__other-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__other-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .features__other-list h2 {
   color: #000;
   text-align: center;
@@ -91,6 +166,8 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+
+  display: block;
 }
 
 .features__other-list p {

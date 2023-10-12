@@ -6,29 +6,60 @@
 .header__nav {
   margin: 0;
   padding: 0;
+  padding-top: 55px;
 }
 
 .header__logo {
   position: absolute;
+  left: calc(50% - 90px);
+  z-index: 5;
 }
-.main__menu {
+
+.main-menu {
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  display: none;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 .header__open-button {
   display: block;
-  margin-left: auto;
+  position: absolute;
+  top: 17px;
+  right: 17px;
   width: 22px;
   height: 22px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../images/SVG/icon-menu.svg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  z-index: 15;
 }
 
 .header__close-button {
-  display: none;
+  display: block;
+  position: absolute; 
+  z-index: 15;
+  width: 22px;
+  height: 22px;
+  top: 17px;
+  right: 17px;
+  border: none;
+  background-color: @main-color;
+  background-image: url("../../images/icon-cross.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
 }
+
+
 
 .main-menu {
   background-color: @main-color;
@@ -37,6 +68,13 @@
 .main-menu__item {
   align-self: center;
   text-align: center;
+  width: 100%;
+  border-bottom: rgba(1, 1, 1, 0.20) solid 1px;
+}
+
+.main-menu li:last-child {
+  border-bottom: none;
+  box-shadow: 0px -10px 9px -4px rgba(1, 1, 1, 1) inset;
 }
 
 .main-menu__item a {
@@ -47,4 +85,14 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  width: 100%;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  background: #81B3D2;
+}
+
+.hidden {
+  display: none;
 }

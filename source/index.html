@@ -9,8 +9,11 @@
     <!-- <link rel="icon" href="favicon.ico">32×32 -->
     <!-- <link rel="manifest" href="manifest.webmanifest"> -->
     <link rel="stylesheet" href="css/style.min.css"> 
+
     <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font">
     <link rel="preload" href="fonts/PTSans-Bold.woff2" as="font">
+    
+    
 
   </head>
 
@@ -18,12 +21,14 @@
 
     <header class="header container layout-wrapper">
       <div class="header__logo">
-        <a href="#" aria-label="Логотип Sedona"></a>
+        <a href="#" aria-label="Логотип Sedona">
+          <img src="images/svg/logo.svg" width="185" height="96">
+        </a>
       </div>
       <nav class="header__nav">
         <button class="btn header__open-button" type="button" aria-label="Открыть меню"></button>
-        <button class="btn header__close-button" type="button" aria-label="Закрыть меню"></button>
-        <ul class="main-menu">
+        <button class="btn header__close-button hidden" type="button" aria-label="Закрыть меню"></button>
+        <ul class="main-menu hidden">
           <li class="main-menu__item">
             <a href="index.html">Главная </a>
           </li>
@@ -43,9 +48,9 @@
     <main class="main-page first-page">
       <section class="hero container">
         <div class="hero__picture-block">
-          <img width="320" height="367" alt="Sedona vista view" src="">
+          <img width="901" height="389" alt="Sedona vista view" src="images/back-desktop.png">
         </div>
-        <div class="hero__text-block">
+        <div class="hero__text-block layout-wrapper">
           <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
@@ -55,42 +60,42 @@
         <section class="features__highlighted container">
           <ul class="features__highlighted-list">
             <li class="features__highlighted-item main-feature">
-              <div class="main-feature__text-part">
+              <div class="main-feature__text-part layout-wrapper">
                 <h2>Настоящий городок</h2> 
                 <span>— №1 —</span> 
                 <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="main-feature__image-part">
-                <img width="320" height="260" alt="Picture of the house in Sedona" src="">
+                <img width="800" height="256" alt="Picture of the house in Sedona" src="images/photo-city1x.jpg">
               </div>
             </li>
             <li class="features__highlighted-item">
-              <ul class="features__legend legend">
-                <li>
+              <ul class="features__legend legend layout-wrapper">
+                <li class="legend__item legend__item--home">
                   <h3>Жилье</h3>
                   <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p></li>
-                <li>
+                <li class="legend__item legend__item--food">
                   <h3>ЕДА</h3>
                   <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p> </li>
-                <li>
+                <li class="legend__item legend__item--shopping">
                   <h3>СУВЕНИРЫ</h3>
                   <p>Не только китайского, но и местного производства!</p></li>
               </ul>
             </li>
             <li class="features__highlighted-item main-feature2">
-              <div class="main-feature2__text-block">
+              <div class="main-feature2__text-part layout-wrapper">
                 <h2>Там есть Мост дьявола</h2>
                 <span>— №2 —</span>
                 <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <div class="main-feature2__image-block">
-                <img width="320" height="260" alt="Picture of the devils's bridge natural attraction" src="">
+              <div class="main-feature2__image-part">
+                <img width="800" height="256" alt="Picture of the devils's bridge natural attraction" src="images/photo-bridge1x.jpg">
               </div>
             </li>           
           </ul>
         </section>
         <section class="features__other container">
-          <ul class="features__other-list">
+          <ul class="features__other-list layout-wrapper">
             <li>
               <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
               <span>— №3 —</span>
@@ -113,10 +118,13 @@
       <section class="promotion container layout-wrapper">
         <h2>ЗЗаинтересовались?</h2>
         <p>Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
-        <a class="btn standard-button" href="#">Найти Гостиницу</a>
+        <a class="btn standard-button promotion__button" href="#">Найти Гостиницу</a>
       </section>
 
       <section class="map container">
+        <div class="map__image-container">
+          <img width="1200" height="350" alt="Sedona's map" src="images/map-desktop.jpg">
+        </div>
         <!-- <iframe></iframe> -->
       </section>
 
@@ -124,10 +132,20 @@
 
     <footer class="footer container layout-wrapper">
       <div class="footer__logo">
-        <a href="#"></a>
+        <a href="#">
+          <img width="166" height="26" alt="Sedona logo" src="images/SVG/visitsedona.svg">
+        </a>
       </div>
       <ul class="footer__social">
-        <li><a></a></li>
+        <li>
+          <a href="vk.com" aria-label="vkontakte"></a>
+        </li>
+        <li>
+          <a href="tg.com" aria-label="telegram"></a>
+        </li>
+        <li>
+          <a href="youtube.com" aria-label="youtube"></a>
+        </li>
       </ul>
       <div class="footer__academy">
         <span>Разработан</span>
@@ -136,6 +154,8 @@
     </footer>
 
   </body>
+
+  <script src="js/script.js"></script>
 </html>
 
 
