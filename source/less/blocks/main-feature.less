@@ -1,0 +1,143 @@
+.main-feature {
+  background-color: @main-color;
+  padding-top: 54px;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    width: 100%;
+    height: 256px;
+    padding-top: 0;
+  }
+}
+
+.main-feature__text-part {
+  @media (min-width: @tablet) {
+    width: 33%;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 56px;
+  }
+}
+
+.main-feature__image-part {
+  width: 100%; 
+  height: auto;
+  min-height: 260px;
+  background-color: @main-color;
+
+  @media (min-width: @tablet) {
+    width: 67%; 
+    min-height: 256px;
+    max-height: 256px;
+  }
+}
+
+.main-feature__image-part img {
+  object-fit: cover;
+  height: 100%;
+  min-height: 260px;
+
+  @media (min-width: @tablet) {
+    min-height: 256px;
+    max-height: 256px;
+  }
+}
+
+.main-feature2 {
+  background-color: @main-color;
+  padding-top: 54px;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: no-wrap;
+    width: 100%;
+    height: 256px;
+    padding-top: 0;
+  }
+}
+
+.main-feature2__text-part {
+  @media (min-width: @tablet) {
+    width: 33%;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 56px;
+  }
+}
+
+.main-feature2__image-part {
+  width: 100%; 
+  height: auto;
+  min-height: 260px;
+  background-color: @main-color;
+
+  @media (min-width: @tablet) {
+    width: 67%; 
+    min-height: 256px;
+    max-height: 256px;
+  }
+}
+
+.main-feature2__image-part img {
+  object-fit: cover;
+  height: 100%;
+  min-height: 260px;
+
+  @media (min-width: @tablet) {
+    min-height: 256px;
+    max-height: 256px;
+  }
+}
+
+
+.main-feature h2,
+.main-feature2 h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.main-feature span,
+.main-feature2 span {
+  color: #FFF;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  display: block;
+}
+
+.main-feature p,
+.main-feature2 p {
+  color: #FFF;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  margin-bottom: 54px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 16px;
+  }
+}

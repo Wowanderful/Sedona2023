@@ -73,7 +73,7 @@ gulp.src(['source/images/**/*.svg', '!source/images/favicons/*.svg', '!source/im
 .pipe(gulp.dest('build/images'));
 
 const sprite = () => {
-return gulp.src(['source/images/svg/*.svg'])
+return gulp.src(['source/images/svg/sprite/*.svg'])
 .pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true

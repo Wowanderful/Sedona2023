@@ -1,0 +1,30 @@
+.contacts-column__tel,
+.contacts-column__email {
+  position: relative;
+}
+
+.contacts-column__tel::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  top: 25px;
+  right: 0;
+  background-image: url("../../images/SVG/phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts-column__email::after {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  top: 25px;
+  right: 0;
+  background-image: url("../../images/SVG/envelope.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

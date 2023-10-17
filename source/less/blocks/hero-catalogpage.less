@@ -2,6 +2,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.hero-catalogpage__photo {
+  width: 100%;
+  min-height: 214px;
+  height: auto;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.hero-catalogpage__photo img {
+  object-fit: cover;
+  height: 100%;
+  min-height: 214px;
+}
+
+.hero-catalogpage__photo::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-image: url("../../images/SEDONA.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
 }
 
 .hero-catalogpage h2 {
@@ -23,6 +51,7 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-catalogpage__text {

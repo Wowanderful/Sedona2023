@@ -1,0 +1,118 @@
+.main-menu {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: @main-color;
+
+  @media (min-width: @tablet) {
+    // flex-direction: row;
+    grid-template-columns: auto auto auto auto;
+    background-color: #ffffff; 
+    position: static;
+    margin-bottom: 17px;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.main-menu__item {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  border-bottom: rgba(1, 1, 1, 0.20) solid 1px;
+
+  @media (min-width: @tablet) {
+    width: auto;
+    min-width: 80px;
+    max-width: 160px;
+    border-bottom: none;
+  }
+}
+
+.main-menu li:nth-child(2),
+.main-menu__item:nth-child(6), 
+.main-menu__item:nth-child(10) {
+  @media (min-width: @tablet) {
+    margin-right: 120px;
+  }
+}
+
+.main-menu li:last-child {
+  border-bottom: none;
+  box-shadow: 0px -10px 9px -4px rgba(1, 1, 1, 1) inset;
+}
+
+.main-menu__item a {
+  color: #FFF;
+  text-align: center;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  width: 100%;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  background: #81B3D2;
+
+  &:hover, 
+  &:focus {
+    background-color: #669EC0;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #5496BD;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: #E5E5E5;
+    opacity: 0.3;
+  }  
+  
+  @media (min-width: @tablet) {
+    background: #ffffff;
+    padding: 0;
+    color: #000000;
+    font-size: 14px;
+    line-height: 21px;
+
+    &:hover, 
+    &:focus {
+      color: @main-color;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-menu__item--active a {
+  @media (min-width: @tablet) {
+    color: #766357;
+  }
+}
+
+.main-menu {
+  @media (min-width: @tablet) {
+    display: grid;
+  }
+}
+
+
