@@ -8,11 +8,27 @@
 .check-forms__radio {
   margin-left: 0;
   padding-left: 0;
+  position: relative;
 }
 
 .check-forms li {
   margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    width: 35%;   
+  }
 }
+
+.check-forms li:nth-child(odd) {
+  @media (min-width: @tablet) {
+    margin-right: 140px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 25px;
+  }
+}
+
 
 .check-forms__radiolist {
   display: flex;
@@ -20,6 +36,18 @@
   align-items: start;
   width: 100%;
   padding-left: 35px;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.check-forms__radiolist li {
+  @media (min-width: @desktop) {
+    width: 270px;
+    margin-right: 25px;
+  }
 }
 
 .check-forms span {
@@ -35,11 +63,26 @@
   position: relative;
 }
 
+.check-forms__checkbox {
+  position: relative; 
+}
+
 .check-forms__checkboxlist {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding-left: 35px;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.check-forms__checkboxlist li {
+  @media (min-width: @desktop) {
+    width: 172px;
+  }
 }
 
 .check-forms__radiolist-controlmark {
@@ -93,4 +136,26 @@
   background-size: contain;
   background-position: center;
   content: "";
+}
+.check-forms h2 {
+  width: 60%;
+  padding-left: 45px;
+  padding-right: 45px;
+  z-index: 5;
+  background-color: #ffffff;
+  align-self: center;
+  margin: 0 auto;
+
+}
+.check-forms h2::after {
+  @media (min-width: @tablet) {
+    content: "";
+    position: absolute; 
+    height: 1px;
+    width: 100%;
+    background: #DBDBDB;
+    left: 0;
+    top: 19px;
+    z-index: -1;
+  }
 }

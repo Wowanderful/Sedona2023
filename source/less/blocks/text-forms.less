@@ -3,6 +3,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
 }
 
 .text-forms fieldset {
@@ -12,6 +18,32 @@
   align-items: center;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet) {
+    width: 50%;
+  }
+}
+
+.text-forms fieldset:first-child {
+  @media (min-width: @tablet) {
+    padding-right: 40px;
+    position: relative; 
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 90%;
+      background-color: #DBDBDB;
+      right: 0;
+    }
+  }
+}
+
+.text-forms fieldset:last-child {
+  @media (min-width: @tablet) {
+    padding-left: 40px;
+  }
 }
 
 .text-forms label {
@@ -39,4 +71,16 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+.name-column input {
+  @media (min-width: @desktop) {
+    width: 430px;
+  }
+}
+
+.contacts-column input {
+  @media (min-width: @desktop) {
+   width: 402px;
+  }
 }

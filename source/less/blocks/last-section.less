@@ -9,6 +9,9 @@
   text-transform: uppercase;
 
   align-self: end;
+  @media (min-width: @tablet) {
+    align-self: center;
+  }
 }
 
 .last-section {
@@ -16,8 +19,22 @@
   flex-direction: column;
   margin-bottom: 24px;
   width: 100%;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .last-section__button {
   width: 100%;
+
+  @media (min-width: @tablet) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 384px;
+  }
 }

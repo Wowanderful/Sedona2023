@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  @media (min-width: @desktop) {
+    width: 960px;
+  }
 }
 
 .form-wrapper fieldset {
@@ -49,16 +53,16 @@
   text-transform: uppercase;
 
   margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    font-size: 21px;
+  }
 }
 
-
-.last-section {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 24px;
-  width: 100%;
+.name-column input {
+  width: 430px;
 }
 
-.last-section__button {
-  width: 100%;
+.contacts-column input {
+  width: 402px;
 }
