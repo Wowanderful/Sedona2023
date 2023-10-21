@@ -45,6 +45,7 @@
   width: 100%;
   height: auto; 
   min-height: 177px;
+  position: relative;
 
   @media (min-width: @tablet) {
     height: 500px;
@@ -52,6 +53,20 @@
 
   @media (min-width: @desktop) {
     width: 800px;
+  }
+
+  &::after {
+    width: 48px;
+    height: 54px;
+    position: absolute; 
+    content: "";
+    cursor: pointer;
+    background-image: url("../../images/Polygon.png");
+    background-repeat: no-repeat;
+    top: calc(50% - 24px);
+    left: calc(50% - 27px);
+    background-position: center;
+    background-size: 100%;
   }
 }
 
