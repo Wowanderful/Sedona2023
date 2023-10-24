@@ -3,27 +3,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 11px;
 
   @media (min-width: @tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 30px;
   }
 }
 
 .legend__item {
-  padding-left: 30px;
   background-repeat: no-repeat; 
-  background-position: 0 0;
+  background-position: 1px -8px;
+  margin-bottom: 22px;
+  padding-left: 48px;
 
   @media (min-width: @tablet) {
     width: 30%;
-    padding-top: 158px;
+    padding-top: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-size: 70px 70px;
-    background-position: 81px 39px;
+    background-position: 80px 40px;
+    padding-left: 0;
+    margin-right: 30px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 50px;
+    background-position: 50% 40px;
+    padding-top: 140px;
+  }
+}
+
+.legend li:last-child {
+  @media (min-width: @tablet) {
+    margin-right: 0;
   }
 }
 
@@ -51,6 +67,10 @@
   @media (min-width: @tablet) {
     font-size: 21px;
   }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 10px;
+  }
 }
 
 .legend p {
@@ -64,5 +84,9 @@
 
   @media (min-width: @tablet) {
     text-align: center;
+  }
+
+  @media (min-width: @desktop) {
+    width: 80%;
   }
 }

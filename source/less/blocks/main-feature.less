@@ -1,6 +1,7 @@
 .main-feature {
   background-color: @main-color;
   padding-top: 54px;
+  z-index: 4;
 
   @media (min-width: @tablet) {
     display: flex;
@@ -13,6 +14,9 @@
 }
 
 .main-feature__text-part {
+  padding-left: 25px;
+  padding-right: 25px;
+
   @media (min-width: @tablet) {
     width: 33%;
     padding-left: 33px;
@@ -43,11 +47,15 @@
     min-height: 256px;
     max-height: 256px;
   }
+
+  @media (min-width: @desktop) {
+    width: 100%;
+  }
 }
 
 .main-feature2 {
   background-color: @main-color;
-  padding-top: 54px;
+  padding-top: 38px;
 
   @media (min-width: @tablet) {
     display: flex;
@@ -60,6 +68,9 @@
 }
 
 .main-feature2__text-part {
+  padding-left: 25px;
+  padding-right: 25px;
+
   @media (min-width: @tablet) {
     width: 33%;
     padding-left: 33px;
@@ -90,6 +101,10 @@
     min-height: 256px;
     max-height: 256px;
   }
+
+  @media (min-width: @desktop) {
+    width: 100%;
+  }
 }
 
 
@@ -103,10 +118,17 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet) {
     font-size: 21px;
     line-height: 26px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
 }
 
@@ -122,6 +144,10 @@
   text-transform: uppercase;
 
   display: block;
+
+  @media (min-width: @desktop) {
+    margin-bottom: 25px;
+  }
 }
 
 .main-feature p,
@@ -135,7 +161,7 @@
   line-height: 21px;
   text-transform: uppercase;
 
-  margin-bottom: 54px;
+  margin-bottom: 41px;
 
   @media (min-width: @tablet) {
     margin-bottom: 16px;
