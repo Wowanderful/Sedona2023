@@ -14,6 +14,10 @@
   @media (min-width: @tablet) {
     padding-top: 23px;
   }
+
+  @media (min-width: @desktop) {
+    padding-top: 30px;
+  }
 }
 
 .check-forms li {
@@ -21,6 +25,10 @@
 
   @media (min-width: @tablet) {
     width: 35%;   
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 40px;
   }
 }
 
@@ -30,7 +38,7 @@
   }
 
   @media (min-width: @desktop) {
-    margin-right: 25px;
+    margin-right: 50px;
   }
 }
 
@@ -40,19 +48,19 @@
   flex-direction: column;
   align-items: start;
   width: 100%;
-  padding-left: 35px;
+  padding-left: 50px;
 
   @media (min-width: @tablet) {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 109px;
+    padding-left: 0;
   }
 }
 
 .check-forms__radiolist li {
   @media (min-width: @desktop) {
-    width: 270px;
-    margin-right: 25px;
+    width: 220px;
+    margin-right: 35px;
   }
 }
 
@@ -72,6 +80,10 @@
 .check-forms__checkbox {
   position: relative; 
   padding-top: 13px;
+
+  @media (min-width: @desktop) {
+    padding-top: 30px;
+  }
 }
 
 .check-forms__checkboxlist {
@@ -160,6 +172,11 @@
     margin-bottom: 37px;
   }
 
+  @media (min-width: @desktop) {
+    width: 49%;
+    margin-bottom: 65px;
+  }
+
 }
 .check-forms h2::after {
   @media (min-width: @tablet) {
@@ -171,5 +188,9 @@
     left: 0;
     top: 35px;
     z-index: -1;
+  }
+
+  @media (min-width: @desktop) {
+    top: 59px;
   }
 }
