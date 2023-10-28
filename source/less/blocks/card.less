@@ -5,6 +5,10 @@
   min-width: 280px;
   margin-bottom: 22px;
 
+  @media (min-width: @tablet) {
+    margin-bottom: 0;
+  }
+
   @media (min-width: @desktop) {
     position: relative;
   }
@@ -19,13 +23,14 @@
 
   @media (min-width: @tablet) {
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
 .card__photo-container {
   width: 100%;
   height: auto; 
-  min-height: 280px;
+  min-height: 268px;
 }
 
 .card__photo-container img {
@@ -94,7 +99,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    padding: 27px 20px 0 20px;
+    padding: 26px 20px 0 20px;
   }
 
   @media (min-width: @desktop) {
@@ -109,10 +114,6 @@
 .card__description-texts {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: @tablet) {
-    margin-bottom: 20px;
-  }
 }
 
 .card__description-likes {
@@ -124,6 +125,7 @@
   @media (min-width: @tablet) {
     justify-content: end;
     margin-bottom: 0;
+    margin-top: 10px;
   }
 
   &::after {
@@ -144,6 +146,10 @@
 .card__likes-button {
   display: block;
   margin-right: 15px;
+
+  @media (min-width: @tablet) {
+    margin-right: 0;
+  }
 }
 
 .card__description-likes svg {
