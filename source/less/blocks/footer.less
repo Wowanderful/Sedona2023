@@ -26,6 +26,14 @@
   height: 24px;
 }
 
+.footer__logo a:focus {
+  opacity: 0.7;
+}
+
+.footer__logo a:hover {
+  opacity: 0.5;
+}
+
 .footer__social {
   width: 162px;
   display: flex;
@@ -66,9 +74,14 @@
 
 .footer__academy {
   margin-bottom: 30px;
+  
+}
+
+.footer__academy a {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .footer__academy span {
@@ -80,6 +93,15 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+}
+
+.footer__academy a:hover span,
+.footer__academy a:focus span {
+  color: #81B3D2;
+}
+
+.footer__academy a:active span {
+  color: #B3B3B3;
 }
 
 .footer__academy a:hover svg,
