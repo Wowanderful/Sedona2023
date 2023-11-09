@@ -46,31 +46,31 @@
         </div>
       </section>
 
-      <article class="form-wrapper container layout-wrapper">
-        <form action="https://echo.htmlacademy.ru/" method="get">
+      <article class="form-wrapper container layout-wrapper" data-form-validate data-callback="base" data-parent-validate="base">
+        <form action="https://echo.htmlacademy.ru/" method="post">
           <section class="text-forms">
             <fieldset class="text-forms__name-column name-column">
               <h2>Представьтесь:</h2>
-              <label class="name-column__firstname" for="firstname">
+              <label class="name-column__firstname" for="firstname" c>
                 <span>Имя<sup>*</sup>:</span>
                 <input type="text" id="firstname" name="name" required>
               </label>
-              <label class="name-column__lastname" for="lastname">
+              <label class="name-column__lastname" for="lastname" data-validate-type="text" data-required>
                 <span>Фамилия<sup>*</sup>:</span>
                 <input type="text" id="lastname" name="lastname" required>
               </label>
-              <label class="name-column__patronimic" for="patronimic">
+              <label class="name-column__patronimic" for="patronimic" data-validate-type="text">
                 <span>Отчество:</span>
                 <input type="text" id="patronimic" name="patronimic">
               </label>
             </fieldset>
             <fieldset class="contacts-column">
               <h2>Контактная информация:</h2>
-              <label class="contacts-column__tel" for="phone">
+              <label class="contacts-column__tel" for="phone" data-validate-type="phone" data-required>
                 <span>Контактный телефон<sup>*</sup>:</span>
                 <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
               </label>
-              <label class="contacts-column__email" for="email">
+              <label class="contacts-column__email" for="email" data-validate-type="email" data-required>
                 <span>Электронная почта<sup>*</sup>:</span>
                 <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
               </label>
@@ -203,7 +203,7 @@
       </div>
     </section>
 
-    <section class="modal modal-success">
+    <section class="modal modal-success modal-closed">
       <div class="modal__wrapper">
         <div class="modal-success__success-window success-window">
           <h2>Ваш отзыв отправлен</h2>
@@ -213,7 +213,7 @@
       </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <script src="js/index.js" type="module"></script>
 
   </body>
   
